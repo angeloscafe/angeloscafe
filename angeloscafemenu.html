@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<title>Angelo's Cafe & Restaurant | Menu</title>
+<style>
+    body, html
+          {  background-image: url("Pics/background.png");
+  background-size: 100%;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 350px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #800000;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.container {
+  position: relative;
+  width: 1000;
+  text-align: center;
+}
+.image {
+  width: 200px;
+  height: 100px;
+ align: center;
+ border: 1px solid #835641;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #231709;
+  text-align: center;
+    height: 100%;
+  width: 100%;
+  -webkit-transform:scale(0);
+  transition: .3s ease;
+  opacity: 0.9;
+}
+.container:hover .overlay {
+  transform: scale(1)
+}
+.text1 {
+   font-family: Lemon Crush;
+  color: #835641;
+  font-size: 15px;
+  position: absolute;
+ top: 50%;
+ bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  align: center;
+
+}
+.div1 {
+width: 180px;
+height: 80px;
+border: 1px solid #835641;
+align: center;
+}
+.table1 {
+  background-color: #231709;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+opacity: 90%;
+}
+.table2 {
+  background-color: #231709;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:5px;
+opacity: 90%;
+}
+.text123
+{
+font-family: Cream Cake;
+color: white;
+font-size:50px;
+text-decoration: none;
+}
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: black;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.text143
+{font-family: Spring Garden;
+color: white;
+font-size:25px;
+}
+.row{
+opacity:90%;
+}
+.info
+{font-family: Spring Garden;
+color: white;
+font-size:20px;
+}
+.menu
+{font-family: Asdonuts;
+color: #835641;
+font-size:60px;
+}
+.menusub
+{font-family: Spring Garden;
+color: #835641;
+font-size:40px;
+text-indent: 10px;
+}
+.menusub1
+{font-family: Spring Garden;
+color: #835641;
+font-size:35px;
+}
+.menusubsub
+{font-family: Lemon Crush;
+color: #835641;
+font-size:25px;
+}
+.menusubsubsub
+{font-family: Balloons;
+color: #835641;
+font-size:30px;
+}
+.border
+{
+border: 1px solid #835641;
+border-spacing: 10px 20px;
+border-collapse: separate;
+border-style: dotted;
+}
+.active1 {
+text-decoration: none;
+color: white;
+}
+.p
+{font-family: Lemon Crush;
+color: #835641;
+font-size:20px;
+text-align:right;
+}
+</style>
+</head>
+<body>
+<img src="Pics/border.png" width="1365" height="70">
+<div class="container2">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Pics/Project41.jpg" width="1000" height="400">
+</div>
+
+<div class="mySlides fade">
+  <img src="Pics/Project11.jpg" width="1000" height="400">
+</div>
+
+<div class="mySlides fade">
+  <img src="Pics/Project12.jpg" width="1000" height="400">
+</div>
+<div class="mySlides fade">
+  <img src="Pics/Project13.jpg" width="1000" height="400">
+</div>
+<div class="mySlides fade">
+  <img src="Pics/Project14.jpg" width="1000" height="400">
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<table class="table1" align="center" width=1000px>
+<tr>
+<td> <img src="Pics/project2.png" width="300" height="100"></td>
+<td align="center" class="text123"><a href="angeloscafehome.html" class="active1">Home </a> </td>
+<td align="center" class="text123"><a href="angeloscafemenu.html" class="active1"> Menu</a></td>
+<td align="center" class="text123"><a href="angeloscafeorder.html" class="active1">Order</a></td>
+<td align="center" class="text123"><a href="angeloscafecontact.html"class="active1"> Contact</a></td>
+</tr>
+</table>
+<table class="table2">
+<tr>
+<td class="text143">&#9742 Call for Info 0975-139-0811</td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td><a href="https://www.facebook.com/AngeeeeeDelgado" class="fa fa-facebook"></a></td>
+<td><a href="https://twitter.com/angedelgado10" class="fa fa-twitter"></a></td>
+<td><a href="https://twitter.com/angedelgado10" class="fa fa-google"></a></td>
+<td><a href="https://www.instagram.com/angelo.delgado/" class="fa fa-instagram"></a></td>
+</tr></table>
+<table class="table2">
+<tr><th class="menu" colspan="4"><img src="Pics/123.png" width="200">Menu<img src="Pics/124.png" width="200"></th></tr>
+<tr><td class="menusub" colspan="4"><img src="Pics/maindish.png" width="50" height="50"> Main Dish</img></td></tr>
+<tr><th class="menusub1" colspan="4"><img src="Pics/meat.png" width="40" height="40">Pork/ Chicken<img src="Pics/meat.png" width="40" height="40"></th></tr>
+<tr><th><div class="container"> <img src="Pics/grilledpork.jfif" class="image"><div class="overlay"><div class="text1 div1"><h3>Grilled Pork<br>P200.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/babybackribs.jpg"  class="image"><div class="overlay"><div class="text1 div1"><h3>Baby Back Ribs<br>P200.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/Sweetandsourpork.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Sweet & Sour Pork<br>P200.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/porkbbq.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Pork BBQ<br>P200.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"> <img src="Pics/porksisig.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Pork Sisig<br>P200.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/porkadobo.jpg"  class="image"><div class="overlay"><div class="text1 div1"><h3>Pork Adobo<br>P200.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/porksteak.png" class="image"><div class="overlay"><div class="text1 div1"><h3>Pork Steak<br>P200.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/bicolexpress.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Bicol Express<br>P200.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"> <img src="Pics/friedchicken.jfif" class="image"><div class="overlay"><div class="text1 div1"><h3>Fried Chicken<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/chickenadobo.jpg"  class="image"><div class="overlay"><div class="text1 div1"><h3>Chicken Adobo<br>P200.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/butterchicken.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Butter Chicken<br>P200.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/chickenbbq.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Chicken BBQ<br>P200.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"> <img src="Pics/chickencaldereta.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Chicken Caldereta<br>P200.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/crispypata.jpg"  class="image"><div class="overlay"><div class="text1 div1"><h3>Crispy Pata<br>P395.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/karekare.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Kare-Kare<br>P150.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/bistektagalog.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Bistek Tagalog<br>P200.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"> <img src="Pics/nativetinola.png" class="image"><div class="overlay"><div class="text1 div1"><h3>Native Tinola<br>P180.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/porksinigang.jpg"  class="image"><div class="overlay"><div class="text1 div1"><h3>Pork Sinigang<br>P200.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/fishtinola.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Fish Tinola<br>P250.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/pochero.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Pochero<br>P200.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"> <img src="Pics/bulalo.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Bulalo<br>P250.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/menudo.jpg"  class="image"><div class="overlay"><div class="text1 div1"><h3>Menudo<br>P200.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/utan.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Utan<br>P180.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/afritada.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Afritada<br>P200.00</h3></div></div></div></th></tr>
+<tr><th class="menusub1" colspan="4"><img src="Pics/seafood.png" width="40" height="40">Seafood<img src="Pics/seafood.png" width="40" height="40"></th></tr>
+<tr><th><div class="container"> <img src="Pics/grilledfish.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Grilled Fish<br>P250.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/steamedfish.jpg"  class="image"><div class="overlay"><div class="text1 div1"><h3>Steamed Fish<br>P250.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/squidadobo.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Squid Adobo<br>P250.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/shrimpsinigang.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Shrimp Sinigang<br>P250.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"> <img src="Pics/squidcalamari.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Squid Calamari<br>P250.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/butteredshrimp.jpg"  class="image"><div class="overlay"><div class="text1 div1"><h3>Buttered Shrimp<br>P250.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/steamedseafood.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Steamed Seafood<br>P250.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/fishwithcoconutmilk.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Fish with coconut milk<br>P250.00</h3></div></div></div></th></tr>
+<tr><td colspan="4"><hr color="#835641" width="800"></td></tr>
+<tr><td class="menusub" colspan="4"><img src="Pics/appetizer.png" width="50" height="50">Appetizer</img></td></tr>
+<tr><th><div class="container"> <img src="Pics/tinaparoll.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Tinapa Roll<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/bakedscallops.jpg"  class="image"><div class="overlay"><div class="text1 div1"><h3>Baked Scallops <br>P250.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/chickenadoboflakes.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Chicken Adobo Flakes<br>P150.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/bakedmusselswithcheese.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Baked Mussels with Cheese<br>P250.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"> <img src="Pics/spamchips.jfif" class="image"><div class="overlay"><div class="text1 div1"><h3>Spam Chips<br>P265.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/nachos.png"  class="image"><div class="overlay"><div class="text1 div1"><h3>Nachos<br>P170.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/frenchfries.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>French Fries<br>P90.00</h3></div> </div></div></th>
+<th><div class="container"><img src="Pics/potatowedges.jfif" class="image"><div class="overlay"><div class="text1 div1"><h3>Potato Wedges<br>P100.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"><img src="Pics/homemadepotatochips.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Homemade Potato Chips<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/siomai.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Siomai<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/cheesesticks.png" class="image"><div class="overlay"><div class="text1 div1"><h3>Cheese Stick<br>P80.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/homemadekikiam.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Homemade Kikiam<br>P150.00</h3></div></div></div></th></tr>
+<tr><td colspan="4"><hr color="#835641" width="800"></td></tr>
+<tr><td class="menusub" colspan="4"><img src="Pics/soup.png" width="50" height="50"> Soup</img></td></tr>
+<th><div class="container"><img src="Pics/lugaw.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Lugaw<br>P100.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/creamyvegetable.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Creamy Vegetable Soup<br>P100.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/champorado.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Champorado<br>P100.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/goto.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Goto<br>P100.00</h3></div></div></div></th></tr>
+<tr><td colspan="4"><hr color="#835641" width="800"></td></tr>
+<tr><td class="menusub"  colspan="4"><img src="Pics/salad.png" width="50" height="50"> Salad</img></td></tr>
+<th><div class="container"><img src="Pics/chopseuy.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Chopseuy Guisado<br>P200.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/mixedvegetables.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Mixed Vegetable<br>P200.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/fruitsalad.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Fruit Salad<br>P200.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/coleslaw.jpeg" class="image"><div class="overlay"><div class="text1 div1"><h3>Coleslaw<br>P200.00</h3></div></div></div></th></tr>
+<tr><td colspan="4"><hr color="#835641" width="800"></td></tr>
+<tr><td class="menusub" colspan="4"><img src="Pics/pasta.png" width="50" height="50"> Pasta</img></td></tr>
+<th><div class="container"><img src="Pics/spaghetti.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Spaghetti <br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/carbonara.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Carbonara<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/pesto.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Pesto<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/lasagna.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Lasagna<br>P150.00</h3></div></div></div></th></tr>
+<tr><td colspan="4"><hr color="#835641" width="800"></td></tr>
+<tr><td class="menusub" colspan="4"><img src="Pics/noodles.png" width="50" height="50">Noodles</img></td></tr>
+<th><div class="container"><img src="Pics/bihonguisado.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Bihon Guisado<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/sotanghonguisado.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Sotanghon Guisado<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/lomi.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Lomi<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/cantonguisado.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Canton Guisado<br>P150.00</h3></div></div></div></th></tr>
+<tr><td colspan="4"><hr color="#835641" width="800"></td></tr>
+<tr><td class="menusub" colspan="4"><img src="Pics/burger.png" width="50" height="50"> Burger</img></td></tr>
+<th><div class="container"><img src="Pics/burger.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Plain Burger<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/adoboburger.jfif" class="image"><div class="overlay"><div class="text1 div1"><h3>Adobo Burger<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/beefburgee.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Beef Burger<br>P150.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/eggplantburger.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Eggplant Burger<br>P150.00</h3></div></div></div></th></tr>
+<tr><td colspan="4"><hr color="#835641" width="800"></td></tr>
+<tr><td class="menusub" colspan="4"><img src="Pics/pizza.png" width="50" height="50"> Pizza</img></td></tr>
+<th><div class="container"><img src="Pics/cheeseoverloadpizza.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Cheese Overload<br>P300.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/hamandcheesepizza.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Ham and Cheese<br>P300.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/hawaiian.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Hawaiian <br>P300.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/pepperoni.jfif" class="image"><div class="overlay"><div class="text1 div1"><h3>Pepperoni <br>P300.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"><img src="Pics/baconandcheese.jfif" class="image"><div class="overlay"><div class="text1 div1"><h3>Bacon and Cheese<br>P300.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/vegetariandelight.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Vegetarian Delight <br>P300.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/seafoodoverload.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Seafood Overload<br>P300.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/allinonepizza.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>All-in-one Pizza<br>P300.00</h3></div></div></div></th></tr>
+<tr><td colspan="4"><hr color="#835641" width="800"></td></tr>
+<tr><td class="menusub" colspan="4"><img src="Pics/dessert.png" width="50" height="50"> Desserts</img></td></tr>
+<th><div class="container"><img src="Pics/halohalo.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Halo Halo<br>P100.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/lecheflan.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Leche Flan<br>P100.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/ubehalaya.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Ube Halaya<br>P100.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/sapinsapin.jfif" class="image"><div class="overlay"><div class="text1 div1"><h3>Sapin Sapin<br>P100.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"><img src="Pics/maisconyelo.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Mais Con yelo<br>P100.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/turon.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Turon<br>P50.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/majablanca.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Maja Blanca<br>P100.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/ginataangbilobilo.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Ginataang Bilo Bilo<br>P100.00</h3></div></div></div></th></tr>
+<tr><td colspan="4"><hr color="#835641" width="800"></td></tr>
+<tr><td class="menusub" colspan="4"><img src="Pics/breadsandcupcake.png" width="50" height="50"> Bread and Cupcake</img></td></tr>
+<th><div class="container"><img src="Pics/lemonmeringuepie.jpeg" class="image"><div class="overlay"><div class="text1 div1"><h3>Lemon Meringue Pie<br>P50.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/chocolatecupcake.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Chocolate Cupcake<br>P50.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/appleturnover.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Apple Turnover<br>P50.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/cinnamonroll.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Cinnamon Roll<br>P50.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"><img src="Pics/ensaymada.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Ensaymada<br>P50.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/bukopie.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Buko Pie<br>P50.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/brownies.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Brownies<br>P50.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/monay.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Monay<br>P50.00</h3></div></div></div></th></tr>
+<tr><th><div class="container"><img src="Pics/pandesal.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Pandesal<br>P50.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/hopia.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Hopia<br>P50.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/pianono.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Pianono<br>P50.00</h3></div></div></div></th>
+<th><div class="container"><img src="Pics/siopao.jpg" class="image"><div class="overlay"><div class="text1 div1"><h3>Siopao<br>P50.00</h3></div></div></div></th></tr>
+<tr><td colspan="4"><hr color="#835641" width="800"></td></tr>
+<tr><td class="menusub" colspan="4"><img src="Pics/drinks.png" width="50" height="50"> Drinks</img></td></tr>
+<tr><th class="menusub1" colspan="4"><img src="Pics/coffee.png" width="40" height="40">Coffee<img src="Pics/coffee.png" width="40" height="40"></th></tr>
+<tr class="menusubsub"><th>Espresso</th><th>Americano</th><th>Cappucino</th><th>Black Coffee</th></tr>
+<tr class="menusubsub"><th>Latte</th><th>Macchiato</th><th>Double Espresso</th><th>Cold Brew Coffee</th></tr>
+<tr><th class="menusub1" colspan="4"><img src="Pics/tea.png" width="40" height="40">Tea<img src="Pics/tea.png" width="40" height="40"></th></tr>
+<tr class="menusubsub"><th>Honey Lemon</th><th>Jasmine Tea</th><th>Green Tea</th><th>Milk Tea</th></tr>
+<tr><th class="menusub1" colspan="4"><img src="Pics/shake.png" width="40" height="40">Shakes / Frappe<img src="Pics/shake.png" width="40" height="40"></th></tr>
+<tr class="menusubsub"><th>Mocha</th><th>Caramal Freeze</th><th>Cookies & Cream</th><th>Dark Chocolate</th></tr>
+<tr class="menusubsub"><th>Vanilla</th><th>Chocolate</th><th>Strawberry Cream</th><th>Coffee Jelly</th></tr>
+<tr><th class="menusub1" colspan="4">Others</th></tr>
+<tr class="menusubsub"><th>Soda</th><th>Juice</th><th>Beer</th><th>Non-alcohalic Drink</th></tr>
+<tr class="menusubsub"><th>Cocktail</th><th>Milk</th><th>Wine</th><th>Water</th></tr>
+<tr><td colspan="4"><hr color="#835641" width="800"></td></tr>
+<tr><td class="menusub" colspan="4"><img src="Pics/extra.png" width="50" height="50">Extra</img></td></tr>
+<tr class="menusubsub"><th>Rice</th><th>Vegetables</th><th>Egg</th><th>Sauce</th></tr>
+<tr class="menusubsub"><th>Cheese</th><th>Slice of Bread</th><th>Peanuts</th><th>French Fries</th></tr>
+</table>
+<table class="table2">
+<tr class="info">
+<td>Search<br><form><input type="text" name="search" placeholder="Search..."><br>Social Media<br><a href="https://www.facebook.com/AngeeeeeDelgado" class="fa fa-facebook"></a>Angelo Delgado<br><a href="https://twitter.com/angedelgado10" class="fa fa-twitter"></a>angelodelgado10
+<br><a href="https://mail.google.com/mail/u/0/#inbox" class="fa fa-google"></a>angeloscafesince2000@gmail.com<br><a href="https://www.instagram.com/angelo.delgado/" class="fa fa-instagram"></a>angelo.delgado</td>
+<td>Angelo's Cafe & Restaurant<br><br>Capt. C. Nazareno<br>Naic, Cavite 4110<br>Philippines<br><br>
+Monday-Friday	9AM-7PM<br>
+Saturday	8AM-7PM<br>
+Sunday	7AM-5PM</td>
+<td>Our location<br><br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3865.871326420589!2d120.7621663148369!3d14.318905989982321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDE5JzA4LjEiTiAxMjDCsDQ1JzUxLjciRQ!5e0!3m2!1sen!2sph!4v1618993876836!5m2!1sen!2sph" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></td>
+<td>Contact Us<br>Email Address<br><form><input type="name" name="username"></form><br><br>Message<br><br>
+Enter your message<br><textarea name="note" rows="3" cols="20%"></textarea><br>
+<form><input class="button button1" type="Submit" onclick="alert('Your message has been sent!')"></form></td>
+</tr>
+<tr><th colspan="5"><hr color="brown" width="800"></tr>
+<tr class="info"><th colspan="5">
+Copyright &copy; Angelo's Cafe & Restaurant. All rights reserved</th></table>
+</body></html>
